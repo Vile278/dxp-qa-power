@@ -79,6 +79,11 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
             Console.ReadKey();
         }
 
+		public SumArray()
+		{
+			daySo = new int[] { 50, 42, 60, 55 };
+		}
+
     }
 }
 

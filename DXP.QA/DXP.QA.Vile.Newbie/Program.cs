@@ -36,9 +36,14 @@ namespace Vile
 
             //DAY005: IF WHILE FOR LIST ARRAY
             Console.WriteLine("++++++++++++++++++++++++++++++++++++++ Begin day 005 ++++++++++++++++++++++++++++++++++++++");
-            //List<int> numbers = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
-            SumList.daySo = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
+            // Constructor
             var sumList = new SumList();
+            Console.WriteLine("Using constructor:");
+            sumList.printInfo();
+            //List<int> numbers = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
+            // Khoi tao object ngoai constructor
+            SumList.daySo = new List<int>() { 1, 3, 7, 8, 11, 2, 40, 51 };
+            //sumList = new SumList();
             //sumList.printInfo(numbers);
             sumList.printInfo();
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung for + if clause): {sumList.sumUsingForAndIf(numbers)}");
@@ -46,10 +51,18 @@ namespace Vile
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + if clause): {sumList.sumUsingWhileAndIf(numbers)}");
             //Console.WriteLine($"Tinh Tong cac phan tu le (su dung while + while ): {sumList.sumUsingWhileAndWhile(numbers)}");
 
-            //var daySo = new int[] {1, 2, 3, 4, 5, 6, 21, 30};
-            SumArray.daySo = new int[] { 1, 2, 3, 4, 5, 6, 21, 30 };
+            //constructor
             var sumArray = new SumArray();
+            Console.WriteLine("Using constructor:");
             sumArray.printInfo();
+
+            //Khoi tao object static
+            SumArray.daySo = new int[] { 1, 2, 3, 4, 5, 6, 21, 30 };
+            //sumArray = new SumArray();
+            sumArray.printInfo();
+
+
+            //var daySo = new int[] {1, 2, 3, 4, 5, 6, 21, 30};
             //sumArray.printInfo(daySo);
             //Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {SumArray.SumUsingForAndIf(daySo)}");
             //Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {SumArray.SumUsingForeachAndIf(daySo)}");

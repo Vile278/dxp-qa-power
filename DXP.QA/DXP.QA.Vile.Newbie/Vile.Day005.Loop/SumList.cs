@@ -83,7 +83,10 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
             Console.WriteLine("*****************************");
             Console.ReadKey();
         }
-
+        public SumList()
+        {
+            daySo = new List<int> { 9, 8, 29, 6 };
+        }
     }
 }
 
