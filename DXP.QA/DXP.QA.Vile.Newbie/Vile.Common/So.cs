@@ -11,6 +11,10 @@ namespace DXP.QA.Vile.Newbie.Vile.Common
                 return false;
         }
         public abstract void printInfo();
+        public static void printInforUsingPolymorphism()
+        {
+            Console.WriteLine("This is printed in basic(Parent) class");
+        }
         public So()
 		{
 		}

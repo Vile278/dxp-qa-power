@@ -55,6 +55,9 @@ namespace Vile
             var sumArray = new SumArray();
             Console.WriteLine("Using constructor:");
             sumArray.printInfo();
+            //using Polymorphism
+            Console.WriteLine("Using Polymorphism:");
+            SumArray.printInforUsingPolymorphism();
 
             //Khoi tao object static
             SumArray.daySo = new int[] { 1, 2, 3, 4, 5, 6, 21, 30 };

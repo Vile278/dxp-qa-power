@@ -8,7 +8,7 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 	public class SumArray : So
 	{
         private static int tongChan;
-		public static int[] daySo;
+		public static int[]? daySo;
         public static int SumUsingForAndIf(int[] numbers)
 		{
 			tongChan = 0;
@@ -78,8 +78,25 @@ namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
             Console.WriteLine("*****************************");
             Console.ReadKey();
         }
-
-		public SumArray()
+        public static void printInforUsingPolymorphism()
+		{
+            Console.WriteLine("*****************************");
+            Console.WriteLine("Tinh tong cac so chan trong ARRAY bang 4 cach:");
+            Console.WriteLine("Day so nguyen thuy:");
+            foreach (int So in daySo)
+            {
+                Console.Write($"{So}; ");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Tinh Tong cac so chan (su dung for + if clause): {SumArray.SumUsingForAndIf(daySo)}");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung foreach + if clause): {SumArray.SumUsingForeachAndIf(daySo)}");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung while + if clause): {SumArray.SumUsingWhileAndIf(daySo)}");
+            Console.WriteLine($"Tinh Tong cac so chan (su dung while + while clause): {SumArray.SumUsingWhileAndWhile(daySo)}");
+            Console.WriteLine("Nhap phim bat ky de thoat");
+            Console.WriteLine("*****************************");
+            Console.ReadKey();
+        }
+        public SumArray()
 		{
 			daySo = new int[] { 50, 42, 60, 55 };
 		}
