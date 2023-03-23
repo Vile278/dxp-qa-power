@@ -3,7 +3,37 @@ using DXP.QA.Vile.Newbie.Vile.Common;
 
 namespace DXP.QA.Vile.Newbie.Vile.Day005.Loop
 {
-	
+	abstract class A
+	{
+		public abstract void AMethod();
+		
+		public virtual void OtherMethod()
+		{
+			Console.WriteLine("Other method code in father");
+            Console.WriteLine("Other method code in father");
+            Console.WriteLine("Other method code in father");
+            Console.WriteLine("Other method code in father");
+            Console.WriteLine("Other method code in father");
+
+        }
+	}
+
+	class B : A
+	{
+		public int AMethod(int value) { return 3; }
+
+        public override void AMethod()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void OtherMethod()
+        {
+            base.OtherMethod();
+
+			Console.WriteLine("Child method override");
+        }
+    }
 
 	public class SumArray : So
 	{
