@@ -4,6 +4,7 @@ using DXP.QA.Vile.Newbie.Vile.Day002.Static;
 using DXP.QA.Vile.Newbie.Vile.Day003.Variable;
 using DXP.QA.Vile.Newbie.Vile.Day005.Loop;
 using DXP.QA.Vile.Newbie.Vile.Common;
+using DXP.QA.Vile.Newbie.DelegateAnonymousLambda;
 
 namespace Vile
 {
@@ -12,6 +13,10 @@ namespace Vile
 
         static void Main(string[] args)
         {
+            DeAnLa deAnLa = new DeAnLa();
+            deAnLa.printAnonymous();
+            deAnLa.printLambda();
+            /*
             //DAY 001:
             //data type Int, string, bool
             var day1 = new DataType();
@@ -76,6 +81,8 @@ namespace Vile
             SapXep.DaySo = new int[] { 11, 2, 21, 4, 5, 6, 21, 30 };
             var sapXep = new SapXep();
             sapXep.printInfo();
+            */
+
             /*
             var numbers = new List<int>() { 1, 2, 3, 4 };
             Console.WriteLine($"So phan tu cua list: {numbers.Count}");
